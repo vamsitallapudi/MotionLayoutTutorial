@@ -13,7 +13,7 @@
   See the License for the specific language governing permissions and
   limitations under the License.
   -->
-<com.google.androidstudio.motionlayoutexample.utils.DrawerContent xmlns:android="http://schemas.android.com/apk/res/android"
+<com.coderefer.motionlayouttutorial.DrawerContent xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/menu"
     android:layout_width="180dp"
@@ -106,4 +106,4 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
-</com.google.androidstudio.motionlayoutexample.utils.DrawerContent>
+</com.coderefer.motionlayouttutorial.DrawerContent>

@@ -1,12 +1,12 @@
 package com.coderefer.motionlayouttutorial
 
 import android.content.Context
-import android.support.constraint.motion.MotionLayout
-import android.support.v4.widget.DrawerLayout
+import androidx.drawerlayout.widget.DrawerLayout
 import android.util.AttributeSet
 import android.view.View
+import androidx.constraintlayout.motion.widget.MotionLayout
 
-class DrawerContent @JvmOverloads constructor(context: Context, attrs: AttributeSet? =null, defStyleAttr:Int=0) : MotionLayout(context,attrs, defStyleAttr), DrawerLayout.DrawerListener {
+class DrawerContent @JvmOverloads constructor(context: Context, attrs: AttributeSet? =null, defStyleAttr:Int=0) : MotionLayout(context,attrs, defStyleAttr), androidx.drawerlayout.widget.DrawerLayout.DrawerListener {
     override fun onDrawerStateChanged(p0: Int) {
 //        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
@@ -25,7 +25,7 @@ class DrawerContent @JvmOverloads constructor(context: Context, attrs: Attribute
 
     override fun onAttachedToWindow() {
         super.onAttachedToWindow()
-        (parent as? DrawerLayout)?.addDrawerListener(this)
+        (parent as? androidx.drawerlayout.widget.DrawerLayout)?.addDrawerListener(this)
     }
 
 }

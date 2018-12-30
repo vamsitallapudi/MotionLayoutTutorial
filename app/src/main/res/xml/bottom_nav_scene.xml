@@ -7,7 +7,7 @@
             motion:constraintSetEnd="@+id/end"
             motion:duration="1000">
         <OnSwipe
-                motion:touchAnchorId="@+id/button2"
+                motion:touchAnchorId="@+id/bottom_nav_view"
                 motion:touchAnchorSide="right"
                 motion:dragDirection="dragRight" />
 
@@ -19,7 +19,7 @@
                     motion:percentX="0.5"
                     motion:percentY="0.25"
                     motion:framePosition="25"
-                    motion:target="@+id/button2"/>
+                    motion:target="@+id/bottom_nav_view"/>
 
             <KeyPosition
                     motion:keyPositionType="parentRelative"
@@ -27,7 +27,7 @@
                     motion:percentX="1"
                     motion:percentY="0.5"
                     motion:framePosition="75"
-                    motion:target="@id/button2"/>
+                    motion:target="@id/bottom_nav_view"/>
         </KeyFrameSet>
     </Transition>
 
@@ -35,7 +35,7 @@
         <!--using pathMotionArc is sufficient for arc like transition from start constraint to end constraints-->
         <Constraint
                 motion:pathMotionArc="startVertical"
-                android:id="@id/button2"
+                android:id="@id/bottom_nav_view"
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:layout_marginStart="8dp"
@@ -50,7 +50,7 @@
 
     <ConstraintSet android:id="@+id/end">
         <Constraint
-                android:id="@id/button2"
+                android:id="@id/bottom_nav_view"
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:layout_marginEnd="8dp"
